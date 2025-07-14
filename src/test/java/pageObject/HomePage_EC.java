@@ -1,0 +1,31 @@
+package pageObject;
+
+import org.openqa.selenium.WebElement;
+
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.pagefactory.AndroidFindBy;
+
+public class HomePage_EC extends BasePage_EC{
+
+	public HomePage_EC(AndroidDriver driver) {
+		super(driver);
+	}
+	
+	@AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.widget.ImageView\").instance(3)")
+	WebElement Homelogo;
+	
+	public void HomeLogoDispalyed() {
+		boolean isLogovisible = Homelogo.isDisplayed();
+		System.out.println(isLogovisible+"- - App logged in and HomepageIcon etc displayed ");
+		
+	}
+	
+	@AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.view.View\").instance(5)")
+    WebElement ProfileIcon;
+    
+    
+    public void ProfileIcon() {
+    	ProfileIcon.click();
+    }
+
+}

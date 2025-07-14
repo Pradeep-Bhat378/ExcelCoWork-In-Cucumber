@@ -41,14 +41,7 @@ public class LoginPage_EC extends BasePage_EC{
 		Login.click();
 	}
 	
-	@AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.widget.ImageView\").instance(3)")
-	WebElement Homelogo;
 	
-	public void ExcelLogo() {
-		boolean isLogovisible = Homelogo.isDisplayed();
-		System.out.println(isLogovisible);
-		
-	}
 	
     @AndroidFindBy(accessibility = "Please enter an email address")
     WebElement EmailValidateMessage;
@@ -65,4 +58,6 @@ public class LoginPage_EC extends BasePage_EC{
     	
     	System.out.println(PassValidateMessage.isDisplayed());
     }
+    
+    
 }
