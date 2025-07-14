@@ -4,8 +4,9 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-    features = "./features",
-    glue = {"stepDefinition"},
+	features = "src/test/resources/features/Login.feature",
+    glue = {"stepDefinitions"},
+    dryRun = false, // Only check if all steps have definitions
     plugin = {"pretty", "html:target/cucumber-reports.html"},
     monochrome = true
 )

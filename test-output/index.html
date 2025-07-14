@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\prade\AppData\Local\Temp\testng-eclipse-1016287451\testng-customsuite.xml</span>
+                    <span>C:\Users\prade\AppData\Local\Temp\testng-eclipse--1169046530\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Check boxes enabling and disabling and printing the output of checkboxes status&quot;, &quot;Check boxes vali...)">runScenario("Check boxes enabling and disabling and printing the output of checkboxes status", "Check boxes vali...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Valid login&quot;, &quot;Login to App&quot;)">runScenario("Valid login", "Login to App")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -126,55 +126,44 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Check boxes enabling and disabling and printing the output of checkboxes status&quot;, &quot;Check boxes vali...)">
-                  </a> <!-- runScenario("Check boxes enabling and disabling and printing the output of checkboxes status", "Check boxes vali...) -->
+                  <a name="runScenario(&quot;Valid login&quot;, &quot;Login to App&quot;)">
+                  </a> <!-- runScenario("Valid login", "Login to App") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Check boxes enabling and disabling and printing the output of checkboxes status","Check boxes validating")</span>
-                  <div class="stack-trace">io.cucumber.testng.UndefinedStepException: The step &apos;App apk&apos; and 7 other step(s) are undefined.
-You can implement these steps using the snippet(s) below:
-
-@Given(&quot;App apk&quot;)
-public void app_apk() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;user launch ApiDemo application&quot;)
-public void user_launch_api_demo_application() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;All module in home page list need to display&quot;)
-public void all_module_in_home_page_list_need_to_display() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;User click on Accessbility&quot;)
-public void user_click_on_accessbility() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;{int} Module list need to display&quot;)
-public void module_list_need_to_display(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;User click on Accessibility node check boxes page need to display&quot;)
-public void user_click_on_accessibility_node_check_boxes_page_need_to_display() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;validate the enabled and disabled checkboxes&quot;)
-public void validate_the_enabled_and_disabled_checkboxes() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;Select and unselect checboxes and mention its validation&quot;)
-public void select_and_unselect_checboxes_and_mention_its_validation() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at ✽.App apk(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/./features/check_boxes.feature:4)
+                  <span class="parameters">("Valid login","Login to App")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({AppiumBy.androidUIAutomator: new UiSelector().className(&quot;android.widget.ImageView&quot;).instance(3)})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:74)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
+	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$XA88egyq.isDisplayed(Unknown Source)
+	at pageObject.LoginPage122.ExcelLogo(LoginPage122.java:48)
+	at stepDefinitions.LoginSteps121.verify_login(LoginSteps121.java:34)
+	at ✽.the user should be logged in(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/Login.feature:7)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@1b410308 (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
+	... 6 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({AppiumBy.androidUIAutomator: new UiSelector().className(&quot;android.widget.ImageView&quot;).instance(3)})
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
+Driver info: driver.version: RemoteWebDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:54)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 8 more
 
 </div> <!-- stack-trace -->
                   <em>
@@ -186,7 +175,7 @@ public void select_and_unselect_checboxes_and_mention_its_validation() {
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\prade\AppData\Local\Temp\testng-eclipse-1016287451\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\prade\AppData\Local\Temp\testng-eclipse--1169046530\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -247,12 +236,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'testRunner.TestRunner')
-data.setCell(0, 3, 172);
+data.setCell(0, 3, 24034);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 172 ms</span>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -280,18 +269,18 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testRunner.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@3fabf088)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@77db3d02)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">runScenario("Check boxes enabling and disabling and printing the output of checkboxes status", "Check boxes vali...)</span>
-                <span class="method-start">629 ms</span>
+                <span class="method-name">runScenario("Valid login", "Login to App")</span>
+                <span class="method-start">572 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">808 ms</span>
+                <span class="method-start">24617 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
