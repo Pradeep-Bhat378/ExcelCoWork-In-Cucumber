@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-14T13:19:51 IST" name="Default suite" finished-at="2025-07-14T13:19:52 IST" duration-ms="857">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@38afe297]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-07-14T13:19:51 IST" name="Default test" finished-at="2025-07-14T13:19:52 IST" duration-ms="857">
+      <class name="testRunner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.TestRunner@38afe297]" started-at="2025-07-14T13:19:51 IST" name="setUpClass" finished-at="2025-07-14T13:19:52 IST" duration-ms="620" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3fabf088]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@38afe297]" started-at="2025-07-14T13:19:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-14T13:19:52 IST" duration-ms="172" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check boxes enabling and disabling and printing the output of checkboxes status"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Check boxes validating"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'App apk' and 7 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("App apk")
+public void app_apk() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user launch ApiDemo application")
+public void user_launch_api_demo_application() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("All module in home page list need to display")
+public void all_module_in_home_page_list_need_to_display() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("User click on Accessbility")
+public void user_click_on_accessbility() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("{int} Module list need to display")
+public void module_list_need_to_display(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("User click on Accessibility node check boxes page need to display")
+public void user_click_on_accessibility_node_check_boxes_page_need_to_display() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("validate the enabled and disabled checkboxes")
+public void validate_the_enabled_and_disabled_checkboxes() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Select and unselect checboxes and mention its validation")
+public void select_and_unselect_checboxes_and_mention_its_validation() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'App apk' and 7 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("App apk")
+public void app_apk() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user launch ApiDemo application")
+public void user_launch_api_demo_application() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("All module in home page list need to display")
+public void all_module_in_home_page_list_need_to_display() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("User click on Accessbility")
+public void user_click_on_accessbility() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("{int} Module list need to display")
+public void module_list_need_to_display(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("User click on Accessibility node check boxes page need to display")
+public void user_click_on_accessibility_node_check_boxes_page_need_to_display() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("validate the enabled and disabled checkboxes")
+public void validate_the_enabled_and_disabled_checkboxes() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("Select and unselect checboxes and mention its validation")
+public void select_and_unselect_checboxes_and_mention_its_validation() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at ✽.App apk(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/./features/check_boxes.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.TestRunner@38afe297]" started-at="2025-07-14T13:19:52 IST" name="tearDownClass" finished-at="2025-07-14T13:19:52 IST" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
