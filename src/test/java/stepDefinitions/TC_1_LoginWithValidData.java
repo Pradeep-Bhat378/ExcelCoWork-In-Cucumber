@@ -2,6 +2,12 @@ package stepDefinitions;
 
 import static stepDefinitions.BaseTest.driver;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+
+import com.google.common.collect.ImmutableMap;
+
 import Utils.Coordinate;
 import Utils.Scrollable;
 import io.appium.java_client.android.AndroidDriver;
@@ -50,17 +56,19 @@ public class TC_1_LoginWithValidData {
 		  Coordinate.tapOnCoordinate(989, 133, driver);
 	      Thread.sleep(1000);
 	      
-	      Scrollable.scrollToText("Log Out", driver);
+	      Scrollable.swipeUp(1, driver, 1000);
+	      
 	      System.out.println("scrolled till logout");
-			
+	      
 	}
 
 	@Then("Click on logout button")
 	public void click_on_logout_button() throws InterruptedException {
-		mpp = new MyprofilePage(driver);
-		mpp.Logout();
+		
+	//	mpp = new MyprofilePage(driver);
+	//	mpp.Logout();
 		
 		Thread.sleep(1000);
-		driver.terminateApp(Excel);
+	//	driver.terminateApp(Excel); 
 	}
 }
