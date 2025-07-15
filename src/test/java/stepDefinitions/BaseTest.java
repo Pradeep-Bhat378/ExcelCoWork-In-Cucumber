@@ -2,6 +2,8 @@ package stepDefinitions;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 
 import java.net.URI;
 import java.time.Duration;
@@ -14,6 +16,7 @@ import com.google.common.collect.ImmutableMap;
 public class BaseTest {
     public static AndroidDriver driver;
 
+   
     public void startAppium() {
         try {
             UiAutomator2Options options = new UiAutomator2Options();
@@ -42,6 +45,7 @@ public class BaseTest {
   	    
     }
 
+    
     public void quitDriver() {
         if (driver != null) {
             driver.quit();

@@ -10,6 +10,7 @@ public class Hooks extends BaseTest {
         startAppium(); // Starts Appium before each scenario
     }
 
+   
     @After
     public void tearDown() {
         quitDriver(); // Quits driver after each scenario

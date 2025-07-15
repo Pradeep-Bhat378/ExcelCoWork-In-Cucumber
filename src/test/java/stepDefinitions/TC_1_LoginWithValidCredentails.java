@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+
 import static stepDefinitions.BaseTest.driver;
 
 import java.util.Arrays;
@@ -16,7 +17,7 @@ import pageObject.HomePage_EC;
 import pageObject.LoginPage_EC;
 import pageObject.MyprofilePage;
 
-public class TC_1_LoginWithValidData {
+public class TC_1_LoginWithValidCredentails {
 
 	public String Excel = "com.excel.coworks";
 	public LoginPage_EC lp;
@@ -24,21 +25,23 @@ public class TC_1_LoginWithValidData {
 	public HomePage_EC hp;
 	public MyprofilePage mpp;
 
-	@Given("the app is launched")
-	public void app_is_launched() throws InterruptedException {
+	@Given("Launch the app")
+	public void Launch_the_app() throws InterruptedException {
 		driver.activateApp(Excel);
 		Thread.sleep(3000);
 	}
 
-	@When("the user enters username and password")
+	@When("User enters valid username and password")
 	public void enter_credentials() {
 		lp = new LoginPage_EC(driver);
 		lp.Email("4pradeep4@gmail.com");
 		lp.Password("@Excel12345");
 	}
 
-	@And("clicks the login button")
-	public void click_login() {
+	@And("User tap on the login button")
+	public void User_tap_on_the_login_button() {
+		lp = new LoginPage_EC(driver);
+
 		lp.LoginButton();
 	}
 
@@ -51,8 +54,8 @@ public class TC_1_LoginWithValidData {
 	}
 
 
-	@Then("Click on profile icon")
-	public void click_on_profile_icon() throws InterruptedException {
+	@And("User tap on profile icon")
+	public void User_tap_on_profile_icon() throws InterruptedException {
 		  Coordinate.tapOnCoordinate(989, 133, driver);
 	      Thread.sleep(1000);
 	      
@@ -62,13 +65,16 @@ public class TC_1_LoginWithValidData {
 	      
 	}
 
-	@Then("Click on logout button")
-	public void click_on_logout_button() throws InterruptedException {
+	@And("User tap on logout button")
+	public void click_tap_on_logout_button() throws InterruptedException {
 		
-	//	mpp = new MyprofilePage(driver);
-	//	mpp.Logout();
+		
+		mpp = new MyprofilePage(driver);
+		mpp.Logout();
 		
 		Thread.sleep(1000);
-	//	driver.terminateApp(Excel); 
+		driver.terminateApp(Excel); 
 	}
+
 }
+
