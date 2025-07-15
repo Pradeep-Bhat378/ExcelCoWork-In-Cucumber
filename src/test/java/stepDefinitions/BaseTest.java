@@ -15,6 +15,7 @@ import com.google.common.collect.ImmutableMap;
 
 public class BaseTest {
     public static AndroidDriver driver;
+    public static String ExcelCowork = "com.excel.coworks";
 
    
     public void startAppium() {

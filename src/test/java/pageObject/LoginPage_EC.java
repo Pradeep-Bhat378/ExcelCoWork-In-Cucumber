@@ -4,6 +4,9 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
@@ -65,5 +68,29 @@ public class LoginPage_EC extends BasePage_EC{
     	System.out.println(PassValidateMessage.isDisplayed());
     }
     
+    @AndroidFindBy(uiAutomator = "new UiSelector().description(\"Forgot Password?\")")
+    WebElement ForgotPassword;
+    
+    public void ForgotPassword() {
+    	
+    	ForgotPassword.click();
+    }
+    
+    @AndroidFindBy(accessibility = "Please enter an email address")
+    WebElement EmailValidation;
+    
+    public void E_Validation() {
+    	
+    	Assert.assertTrue(EmailValidation.isDisplayed(), "Email validation error is not displayed");    }
+    
+    @AndroidFindBy(accessibility = "Please enter a password")
+    WebElement PassValidation;
+    
+    public void P_Validation() {
+    	
+    	Assert.assertTrue(PassValidation.isDisplayed(), "Pass validation error is not displayed");
+
+    	
+    }
     
 }

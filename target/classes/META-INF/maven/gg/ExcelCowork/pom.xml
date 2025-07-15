@@ -19,6 +19,12 @@
 			<artifactId>cucumber-testng</artifactId>
 			<version>7.24.0</version>
 		</dependency>
+		<dependency>
+			<groupId>net.java.dev.jna</groupId>
+			<artifactId>jna</artifactId>
+			<version>5.13.0</version>
+		</dependency>
+
 		<!-- Appium Java Client -->
 		<dependency>
 			<groupId>io.appium</groupId>
