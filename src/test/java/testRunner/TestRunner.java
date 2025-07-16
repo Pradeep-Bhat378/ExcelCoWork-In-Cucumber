@@ -9,8 +9,11 @@ import io.cucumber.testng.CucumberOptions;
 
     glue = {"stepDefinitions"},
     dryRun = false, // Only check if all steps have definitions
-    plugin = {"pretty", "html:target/cucumber-reports.html"},
-  // tags = "@FP",                        // <<<<<< TAG FILTER HERE
+    tags = "@P4",                       
+
+    		 plugin = { "pretty", "json:CucumberReport/cucumber-report.html", 
+	"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+  //  plugin = {"pretty", "html:target/cucumber-reports.html"},
     monochrome = true
 )
 public class TestRunner extends AbstractTestNGCucumberTests {

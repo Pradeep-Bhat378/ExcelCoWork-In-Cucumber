@@ -15,13 +15,9 @@ public void validate_error_message_displayed_below_email_text_field() {
 	lp = new LoginPage_EC(driver);
 	
 	lp.E_Validation();
+	lp.P_Validation();
 	
 	System.out.println("Please enter an email address --- Validate message under email field");
-}
-
-@And("Validate error message displayed below password text field")
-public void validate_error_message_displayed_below_password_text_field() {
-   lp.PasswordValidation();
 	System.out.println("Please enter a password --- Validate message under pwd field");
 
 }

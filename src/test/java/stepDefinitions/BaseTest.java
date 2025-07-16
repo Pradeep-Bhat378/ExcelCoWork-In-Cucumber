@@ -27,7 +27,7 @@ public class BaseTest {
             options.setPlatformName("Android");
             options.setNewCommandTimeout(Duration.ofSeconds(30));
         //    options.setNoReset(false);
-             options.setFullReset(true);
+             options.setFullReset(false);
          //   options.noReset();
         //    options.doesNoReset();
         //    options.setClearSystemFiles(false);

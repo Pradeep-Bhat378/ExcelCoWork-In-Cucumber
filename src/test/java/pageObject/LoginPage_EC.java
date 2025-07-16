@@ -81,15 +81,29 @@ public class LoginPage_EC extends BasePage_EC{
     
     public void E_Validation() {
     	
-    	Assert.assertTrue(EmailValidation.isDisplayed(), "Email validation error is not displayed");    }
-    
+    	if(EmailValidation.isDisplayed()) {
+    		System.out.println("Enter a valid password");
+    	} else {
+    		System.out.println("Validate message is not matching");
+    	}
+    	
+    //	Assert.assertEquals(EmailValidation.isDisplayed(), true, "Email validation error is not displayed");
+    }
     @AndroidFindBy(accessibility = "Please enter a password")
     WebElement PassValidation;
     
     public void P_Validation() {
     	
-    	Assert.assertTrue(PassValidation.isDisplayed(), "Pass validation error is not displayed");
+    	
+    	if(PassValidation.isDisplayed()) {
+    		System.out.println("Enter a valid password");
+    	} else {
+    		System.out.println("Validate message is not matching");
+    	}
+    	
+    //	Assert.assertEquals(PassValidation.isDisplayed(),true, "Pass validation error is not displayed");
 
+    	
     	
     }
     

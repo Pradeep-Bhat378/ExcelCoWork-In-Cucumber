@@ -39,10 +39,12 @@ public class TC_1_LoginWithValidCredentails {
 	}
 
 	@And("User tap on the login button")
-	public void User_tap_on_the_login_button() {
+	public void User_tap_on_the_login_button() throws InterruptedException {
 		lp = new LoginPage_EC(driver);
 
 		lp.LoginButton();
+		Thread.sleep(1000);
+
 	}
 
 	@Then("the user should be logged in")
@@ -54,8 +56,8 @@ public class TC_1_LoginWithValidCredentails {
 	}
 
 
-	@And("User tap on profile icon")
-	public void User_tap_on_profile_icon() throws InterruptedException {
+	@And("User tap on profile icon and scroll till end")
+	public void User_tap_on_profile_icon_and_scroll_till_end() throws InterruptedException {
 		  Coordinate.tapOnCoordinate(989, 133, driver);
 	      Thread.sleep(1000);
 	      
@@ -72,8 +74,8 @@ public class TC_1_LoginWithValidCredentails {
 		mpp = new MyprofilePage(driver);
 		mpp.Logout();
 		
-		Thread.sleep(1000);
-		driver.terminateApp(Excel); 
+		Thread.sleep(3000);
+	//	driver.terminateApp(Excel); 
 	}
 
 }
