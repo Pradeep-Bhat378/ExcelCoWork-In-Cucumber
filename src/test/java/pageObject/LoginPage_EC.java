@@ -22,6 +22,12 @@ public class LoginPage_EC extends BasePage_EC{
 
 	}
 	
+	@AndroidFindBy(uiAutomator = "new UiSelector().description(\"Create an account\")")
+	WebElement CreateAccount;
+	
+	public void createAccount() {
+		CreateAccount.click();
+	}
 	
 	@AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.widget.EditText\").instance(0)")
 	WebElement emailField;
@@ -103,8 +109,7 @@ public class LoginPage_EC extends BasePage_EC{
     	
     //	Assert.assertEquals(PassValidation.isDisplayed(),true, "Pass validation error is not displayed");
 
-    	
-    	
+    
     }
     
 }

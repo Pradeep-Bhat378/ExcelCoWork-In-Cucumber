@@ -16,8 +16,8 @@ public class TC7_LoginWithValidAndInvalidData extends BaseTest {
 	   Thread.sleep(1000);
 	   
 	}
-	@When("User enters username {string}")
-	public void user_enters_username(String string) {
+	@When("User enters emailId {string}")
+	public void user_enters_emailId(String string) {
 	    lp.Email(string);
 	}
 	@When("User enters password {string}")

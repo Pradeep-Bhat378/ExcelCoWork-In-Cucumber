@@ -3,14 +3,21 @@ Feature: Login and Logout Feature
   @P0
   Scenario Outline: User logIn
     Given User is on login page
-    When User enters username "<username>"
+    When User enters emailId "<username>"
     And User enters password "<password>"
     Then Login should be "<status>"
 
     Examples: 
-      | username            | password    | status  |
+      | emailId             | password    | status  |
       | 4pradeep4@gmail.com | @Excel12345 | success |
       | John                | wrongpwd    | failed  |
+
+  @P01
+  Scenario: Login with invlid credentials
+    Given User is on login page
+    When User enters emailId "abc@gmail.com"
+    And User enters password "12345"
+    Then User tap on the login button
 
   @P1
   Scenario: Login to the application with valid data and logout of the application
