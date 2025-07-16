@@ -1,5 +1,17 @@
 Feature: Login and Logout Feature
 
+  @P0
+  Scenario Outline: User logIn
+    Given User is on login page
+    When User enters username "<username>"
+    And User enters password "<password>"
+    Then Login should be "<status>"
+
+    Examples: 
+      | username            | password    | status  |
+      | 4pradeep4@gmail.com | @Excel12345 | success |
+      | John                | wrongpwd    | failed  |
+
   @P1
   Scenario: Login to the application with valid data and logout of the application
     Given Launch the app
@@ -31,7 +43,7 @@ Feature: Login and Logout Feature
     Then User tap on profile
     Then User tap on edit icon
     And Clear name field
-    And Clear company name field   
+    And Clear company name field
     And Click on save button
     And User EnterName "<NewEnterName>"
     And User EnterCompanyname "<NewCompanyName>"
@@ -40,5 +52,3 @@ Feature: Login and Logout Feature
     Examples: 
       | NewEnterName | NewCompanyName |
       | Prashanth    | Mankind        |
-      
-    # p5 before running change 33 name and 34 company name in page factory then run 

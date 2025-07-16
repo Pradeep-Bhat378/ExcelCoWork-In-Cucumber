@@ -13,7 +13,7 @@ import io.cucumber.testng.CucumberOptions;
   //  dryRun = true, // for generating snippets
 
    // tags = "@P1 or @P2",   
-    tags = "@P5",
+    tags = "@P0",
     		
     		 
     plugin = {"summary", "html:CucumberReport/cucumber1.html",
