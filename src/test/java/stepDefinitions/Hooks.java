@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import base.BaseTest;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 

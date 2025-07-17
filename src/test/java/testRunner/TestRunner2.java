@@ -7,24 +7,24 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-	features = "src/test/resources/features/",
-    glue = {"stepDefinitions"},
-    dryRun = false, // for running tc
-  //  dryRun = true, // for generating snippets
-
-   // tags = "@P1 or @P2",   
-    tags = "@P01",
-    		
-    		 
-    plugin = {"summary", "html:CucumberReport/cucumber1.html",
-		      "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},   
-    monochrome = true
+    features = "src/test/resources/features/",
+    glue = {"stepDefinitions", "stepDefinitions.common"},  
+ //   dryRun = true,   //for generating snippets
+   dryRun = false, // for running tests
+  // tags = "@ab1",
+  //  tags = "@Regression",
+   tags = "@Personal",
+    monochrome = true,
+    plugin = {
+        "pretty",
+        "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+    }
 )
 public class TestRunner2 extends AbstractTestNGCucumberTests {
 
-	 static {
-	        String timestamp = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(new Date());
-	        String reportPath = "test-output/ExtentReport/Report_" + timestamp + ".html";
-	        System.setProperty("report.path", reportPath);
-	    }	
+    static {
+        String timestamp = new SimpleDateFormat("yyyy-MM-dd_HH-mm-ss").format(new Date());
+        String reportPath = "test-output/ExtentReport/Report_" + timestamp + ".html";
+        System.setProperty("report.path", reportPath);
+    }
 }

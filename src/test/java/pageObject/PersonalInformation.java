@@ -43,8 +43,8 @@ public class PersonalInformation extends BasePage_EC {
 	@AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.widget.EditText\").instance(3)")
      WebElement EnterMobileNo;
 	
-	public void EnterMobileno(Integer numbers) {
-		EnterMobileNo.sendKeys(String.valueOf(numbers));
+	public void EnterMobileno(String string) {
+		EnterMobileNo.sendKeys(String.valueOf(string));
 	}
 	
 	@AndroidFindBy(uiAutomator = "new UiSelector().description(\"Next\")")

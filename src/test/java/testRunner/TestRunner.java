@@ -4,12 +4,12 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-	features = "src/test/resources/features/",
-//	features = "src/test/resources/features/ForgotPassword.feature",
+//	features = "src/test/resources/features/",
+	features = "src/test/resources/features/Personalinformation.feature",
 
     glue = {"stepDefinitions"},
     dryRun = false, // Only check if all steps have definitions
-    tags = "@P4",                       
+ //   tags = "@P4",                       
 
     		 plugin = { "pretty", "json:CucumberReport/cucumber-report.html", 
 	"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},

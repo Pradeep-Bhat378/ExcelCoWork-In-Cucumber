@@ -1,15 +1,13 @@
 package pageObject;
 
-import java.time.Duration;
+import java.time.Duration; 
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
@@ -49,11 +47,14 @@ public class LoginPage_EC extends BasePage_EC{
 		return;
 	}
 	
-	@AndroidFindBy(accessibility ="Login")
+	@AndroidFindBy(xpath = "//android.widget.Button[@content-desc=\"Login\"]")
 	WebElement Login;
+
 	
 	public void LoginButton() {
-		Login.click();
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		    wait.until(ExpectedConditions.visibilityOf(Login));
+		    Login.click();
 	}
 	
 	

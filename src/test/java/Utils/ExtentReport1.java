@@ -20,7 +20,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-import stepDefinitions.BaseTest;
+import base.BaseTest;
 
 public class ExtentReport1 extends BaseTest implements ITestListener, ISuiteListener {
 

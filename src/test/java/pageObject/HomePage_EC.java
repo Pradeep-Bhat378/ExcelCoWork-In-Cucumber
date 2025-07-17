@@ -1,23 +1,24 @@
 package pageObject;
 
-import java.time.Duration;
+import java.time.Duration;  
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 public class HomePage_EC extends BasePage_EC{
 
+	
+	
 	public HomePage_EC(AppiumDriver driver) {
 		super(driver);
 		  PageFactory.initElements(new AppiumFieldDecorator(driver, Duration.ofSeconds(10)), this);
 
 	}
-	
+
 	@AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.widget.ImageView\").instance(3)")
 	WebElement Homelogo;
 	
@@ -34,5 +35,11 @@ public class HomePage_EC extends BasePage_EC{
     public void ProfileIcon() {
     	ProfileIcon.click();
     }
+    
+    public boolean profileIconDisplayed() {
+    return	ProfileIcon.isDisplayed();
+    }
+    
+    
 
 }
