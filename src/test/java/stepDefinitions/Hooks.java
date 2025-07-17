@@ -12,8 +12,8 @@ public class Hooks extends BaseTest {
     }
 
    
-    @After
+ /*  @After
     public void tearDown() {
         quitDriver(); // Quits driver after each scenario
-    }
+    } */
 }

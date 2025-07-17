@@ -9,11 +9,11 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
     features = "src/test/resources/features/",
     glue = {"stepDefinitions", "stepDefinitions.common"},  
- //   dryRun = true,   //for generating snippets
-   dryRun = false, // for running tests
+    dryRun = true,   //for generating snippets
+ //  dryRun = false, // for running tests
   // tags = "@ab1",
   //  tags = "@Regression",
-   tags = "@Personal",
+  // tags = "@Personal",
     monochrome = true,
     plugin = {
         "pretty",

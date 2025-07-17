@@ -21,8 +21,10 @@ public class BaseTest {
     public void startAppium() {
         try {
             UiAutomator2Options options = new UiAutomator2Options();
-            options.setDeviceName("Phone121");
-            options.setUdid("emulator-5554");
+         //   options.setDeviceName("Phone121");
+            options.setDeviceName("Pradeep");
+       //     options.setUdid("emulator-5554");
+             options.setUdid("9b2a222d0dcd");
             options.setAutomationName("UiAutomator2");
             options.setPlatformName("Android");
             options.setNewCommandTimeout(Duration.ofSeconds(30));
@@ -47,9 +49,9 @@ public class BaseTest {
     }
 
     
-    public void quitDriver() {
+ /*   public void quitDriver() {
         if (driver != null) {
             driver.quit();
         }
-    }
+    }   */
 }
