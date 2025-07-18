@@ -72,7 +72,8 @@ public class ExtentReport1 extends BaseTest implements ITestListener, ISuiteList
 		captureScreenshot(result.getName());
 	}
 
-	//		String Sc_Path = System.getProperty("user.dir") + "/screenshot/myscr" + timestamp + ".png";
+	String timestamp1 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(new Date());
+	String Sc_Path = System.getProperty("user.dir") + "/screenshot/myscr" + timestamp1 + ".png";
 
 	public void captureScreenshot(String testName) {
 		String timestamp1 = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss").format(new Date());

@@ -7,11 +7,10 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-    features = "src/test/resources/features/",
+    features = "src/test/resources/features/1_LoginScenario.feature",
     glue = {"stepDefinitions", "stepDefinitions.common"},  
-    dryRun = true,   //for generating snippets
- //  dryRun = false, // for running tests
-  // tags = "@ab1",
+  //  dryRun = true,   //for generating snippets
+   dryRun = false, // for running tests
   //  tags = "@Regression",
   // tags = "@Personal",
     monochrome = true,

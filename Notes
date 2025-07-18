@@ -1,0 +1,17 @@
+Types of ignore 
+
+@ignore
+Scenario: This scenario should be ignored
+  Given some step
+  When some action
+  Then some result
+
+  
+  or
+  
+  @CucumberOptions(
+  features = "src/test/resources/features",
+  glue = "stepDefinitions",
+  tags = "not @ignore"
+)
+  

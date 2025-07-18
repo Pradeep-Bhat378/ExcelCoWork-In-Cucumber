@@ -1,7 +1,8 @@
 package pageObject;
 
-import java.time.Duration; 
+import java.time.Duration;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -37,6 +38,8 @@ public class LoginPage_EC extends BasePage_EC{
 		return;
 	}
 	
+	
+	
 	@AndroidFindBy(uiAutomator = "new UiSelector().className(\"android.widget.EditText\").instance(1)")
 	WebElement password;
 	
@@ -57,6 +60,13 @@ public class LoginPage_EC extends BasePage_EC{
 		    Login.click();
 	}
 	
+	public void LoginPageDisplayed() {
+		
+		emailField.isDisplayed();
+		
+		Assert.assertTrue(Login.isDisplayed());
+		Assert.assertTrue(emailField.isDisplayed());
+	}
 	
 	
     @AndroidFindBy(accessibility = "Please enter an email address")

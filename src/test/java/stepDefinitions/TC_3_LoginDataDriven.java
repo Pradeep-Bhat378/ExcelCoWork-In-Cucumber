@@ -8,7 +8,7 @@ import pageObject.HomePage_EC;
 import pageObject.LoginPage_EC;
 import pageObject.MyprofilePage;
 
-public class TC1_LoginDataDriven extends BaseTest {
+public class TC_3_LoginDataDriven extends BaseTest {
 
 	public String Excel = "com.excel.coworks";
 	public LoginPage_EC lp;

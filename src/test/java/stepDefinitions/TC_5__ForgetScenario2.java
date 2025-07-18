@@ -12,7 +12,7 @@ public class TC_5__ForgetScenario2 extends BaseTest {
 	@And("User enter previous emailId")
 	public void User_enter_previous_emailId() {
 		fp = new ForgotPasswordPage_EC(driver);
-		fp.EnterEmailaddress("4pradeep4@gmail.com");
+		fp.EnterEmailaddress("bhatpradeep378@gmail.com");
 		
 	}
 	

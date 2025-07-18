@@ -16,6 +16,7 @@ Feature: Login Functionality
     Given User is on login page
     When User enters invalid credentials
     Then User tap on the login button
+    But Login should fail and user should be on login page
 
   Scenario: Login with empty Credentials
     Given User is on login page

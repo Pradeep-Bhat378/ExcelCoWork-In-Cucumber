@@ -15,7 +15,8 @@ Feature: Upload personal info and create a account
       | Pradeep   | Concentrix  | ab@gmail.com | 1111111111 |
       | Prashanth | Testsigma   | bc@gmail.com | 2222222222 |
 
-     #Before running below scenario change the name, company name in page object module
+  #Before running below scenario change the name, company name in page object module
+  @Ignore
   Scenario Outline: Profile details Updating
     Given User is on login page
     When User enters valid credentials
