@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 14 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\prade\AppData\Local\Temp\testng-eclipse-32647902\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\prade\Music\Appium Frameworks\ExcelCowork\1stRetryListner.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
                     <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,21 +92,86 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">14 methods, 14 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testRunner.TestRunner2" class="method navigator-link" hash-for-method="runScenario(&quot;Login with invalid Credentials&quot;, &quot;Login Functionality&quot;)">runScenario("Login with invalid Credentials", "Login Functionality")</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with empty Credentials&quot;, &quot;Login Functionality&quot;)">runScenario("Login with empty Credentials", "Login Functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with invalid Credentials&quot;, &quot;Login Functionality&quot;)">runScenario("Login with invalid Credentials", "Login Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Logout and Validate the Toast message&quot;, &quot;Login Functionality&quot;)">runScenario("Logout and Validate the Toast message", "Login Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Adding personal info&quot;, &quot;Upload personal info and create a account&quot;)">runScenario("Adding personal info", "Upload personal info and create a account")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Adding personal info&quot;, &quot;Upload personal info and create a account&quot;)">runScenario("Adding personal info", "Upload personal info and create a account")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with Valid Credentials&quot;, &quot;Login Functionality&quot;)">runScenario("Login with Valid Credentials", "Login Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Profile details Updating&quot;, &quot;Upload personal info and create a account&quot;)">runScenario("Profile details Updating", "Upload personal info and create a account")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with different credentials&quot;, &quot;Login Functionality&quot;)">runScenario("Login with different credentials", "Login Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login and Logout from the application&quot;, &quot;Login and Logout feature&quot;)">runScenario("Login and Logout from the application", "Login and Logout feature")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Logout and Validate the Toast message&quot;, &quot;Login and Logout feature&quot;)">runScenario("Logout and Validate the Toast message", "Login and Logout feature")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with different credentials&quot;, &quot;Login Functionality&quot;)">runScenario("Login with different credentials", "Login Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Enter the generated otp in the field and tap on Verify button (on real device it works)&quot;, &quot;Forgot P...)">runScenario("Enter the generated otp in the field and tap on Verify button (on real device it works)", "Forgot P...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with Valid Credentials&quot;, &quot;Login Functionality&quot;)">runScenario("Login with Valid Credentials", "Login Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testRunner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validating error messages in forgot password page&quot;, &quot;Forgot Password related features&quot;)">runScenario("Validating error messages in forgot password page", "Forgot Password related features")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,59 +182,318 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testRunner.TestRunner2</span>
+              <img src="failed.png"/>
+              <span class="class-name">testRunner.TestRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login with empty Credentials&quot;, &quot;Login Functionality&quot;)">
+                  </a> <!-- runScenario("Login with empty Credentials", "Login Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login with empty Credentials","Login Functionality")</span>
+                  <div class="stack-trace">java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/1_LoginScenario.feature:22)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="runScenario(&quot;Login with invalid Credentials&quot;, &quot;Login Functionality&quot;)">
                   </a> <!-- runScenario("Login with invalid Credentials", "Login Functionality") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Login with invalid Credentials","Login Functionality")</span>
+                  <div class="stack-trace">java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/1_LoginScenario.feature:16)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Logout and Validate the Toast message&quot;, &quot;Login Functionality&quot;)">
+                  </a> <!-- runScenario("Logout and Validate the Toast message", "Login Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Logout and Validate the Toast message","Login Functionality")</span>
+                  <div class="stack-trace">java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/trip.feature:4)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Adding personal info&quot;, &quot;Upload personal info and create a account&quot;)">
+                  </a> <!-- runScenario("Adding personal info", "Upload personal info and create a account") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Adding personal info","Upload personal info and create a account")</span>
+                  <div class="stack-trace">java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/4_Personal_info_Scenarios.feature:5)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Adding personal info&quot;, &quot;Upload personal info and create a account&quot;)">
+                  </a> <!-- runScenario("Adding personal info", "Upload personal info and create a account") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Adding personal info","Upload personal info and create a account")</span>
+                  <div class="stack-trace">java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/4_Personal_info_Scenarios.feature:5)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login with Valid Credentials&quot;, &quot;Login Functionality&quot;)">
+                  </a> <!-- runScenario("Login with Valid Credentials", "Login Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login with Valid Credentials","Login Functionality")</span>
+                  <div class="stack-trace">java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/1_LoginScenario.feature:4)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Profile details Updating&quot;, &quot;Upload personal info and create a account&quot;)">
+                  </a> <!-- runScenario("Profile details Updating", "Upload personal info and create a account") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Profile details Updating","Upload personal info and create a account")</span>
+                  <div class="stack-trace">java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/4_Personal_info_Scenarios.feature:21)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login with different credentials&quot;, &quot;Login Functionality&quot;)">
+                  </a> <!-- runScenario("Login with different credentials", "Login Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login with different credentials","Login Functionality")</span>
+                  <div class="stack-trace">java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/1_LoginScenario.feature:27)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login and Logout from the application&quot;, &quot;Login and Logout feature&quot;)">
+                  </a> <!-- runScenario("Login and Logout from the application", "Login and Logout feature") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login and Logout from the application","Login and Logout feature")</span>
+                  <div class="stack-trace">java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/3_LoginAndLogout_Scenario.feature:5)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Logout and Validate the Toast message&quot;, &quot;Login and Logout feature&quot;)">
+                  </a> <!-- runScenario("Logout and Validate the Toast message", "Login and Logout feature") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Logout and Validate the Toast message","Login and Logout feature")</span>
+                  <div class="stack-trace">java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/3_LoginAndLogout_Scenario.feature:12)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login with different credentials&quot;, &quot;Login Functionality&quot;)">
+                  </a> <!-- runScenario("Login with different credentials", "Login Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login with different credentials","Login Functionality")</span>
+                  <div class="stack-trace">java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/1_LoginScenario.feature:27)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Enter the generated otp in the field and tap on Verify button (on real device it works)&quot;, &quot;Forgot P...)">
+                  </a> <!-- runScenario("Enter the generated otp in the field and tap on Verify button (on real device it works)", "Forgot P...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Enter the generated otp in the field and tap on Verify button (on real device it works)","Forgot Password related features")</span>
+                  <div class="stack-trace">java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/2_ForgotPassword_Scenario.feature:11)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login with Valid Credentials&quot;, &quot;Login Functionality&quot;)">
+                  </a> <!-- runScenario("Login with Valid Credentials", "Login Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login with Valid Credentials","Login Functionality")</span>
+                  <div class="stack-trace">java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/1_LoginScenario.feature:9)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validating error messages in forgot password page&quot;, &quot;Forgot Password related features&quot;)">
+                  </a> <!-- runScenario("Validating error messages in forgot password page", "Forgot Password related features") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validating error messages in forgot password page","Forgot Password related features")</span>
+                  <div class="stack-trace">java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/2_ForgotPassword_Scenario.feature:4)
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Suite-class-failed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\prade\AppData\Local\Temp\testng-eclipse-32647902\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\prade\Music\Appium Frameworks\ExcelCowork\1stRetryListner.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;Utils.ExtentReportManager&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Tets1&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testRunner.TestRunner2&quot;/&gt;
+      &lt;class name=&quot;testRunner.TestRunner&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Tets1 --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Tets1 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
@@ -182,67 +506,199 @@
             </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(14);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
-data.setCell(0, 2, 'testRunner.TestRunner2')
-data.setCell(0, 3, 25506);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 2, 'testRunner.TestRunner')
+data.setCell(0, 3, 585);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'testRunner.TestRunner')
+data.setCell(1, 3, 63);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'testRunner.TestRunner')
+data.setCell(2, 3, 39);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'testRunner.TestRunner')
+data.setCell(3, 3, 33);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'testRunner.TestRunner')
+data.setCell(4, 3, 30);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'testRunner.TestRunner')
+data.setCell(5, 3, 27);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'testRunner.TestRunner')
+data.setCell(6, 3, 27);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'testRunner.TestRunner')
+data.setCell(7, 3, 26);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'testRunner.TestRunner')
+data.setCell(8, 3, 26);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'testRunner.TestRunner')
+data.setCell(9, 3, 25);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'testRunner.TestRunner')
+data.setCell(10, 3, 24);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'testRunner.TestRunner')
+data.setCell(11, 3, 20);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'testRunner.TestRunner')
+data.setCell(12, 3, 19);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'testRunner.TestRunner')
+data.setCell(13, 3, 17);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 25 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 961 ms</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testRunner.TestRunner2</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testRunner.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@13a268cd)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@6b6def36)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Login with Valid Credentials", "Login Functionality")</span>
+                <span class="method-start">291 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Login with Valid Credentials", "Login Functionality")</span>
+                <span class="method-start">882 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Login with invalid Credentials", "Login Functionality")</span>
-                <span class="method-start">312 ms</span>
+                <span class="method-start">949 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Login with empty Credentials", "Login Functionality")</span>
+                <span class="method-start">986 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Login with different credentials", "Login Functionality")</span>
+                <span class="method-start">1015 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Login with different credentials", "Login Functionality")</span>
+                <span class="method-start">1042 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Validating error messages in forgot password page", "Forgot Password related features")</span>
+                <span class="method-start">1061 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Enter the generated otp in the field and tap on Verify button (on real device it works)", "Forgot P...)</span>
+                <span class="method-start">1091 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Login and Logout from the application", "Login and Logout feature")</span>
+                <span class="method-start">1119 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Logout and Validate the Toast message", "Login and Logout feature")</span>
+                <span class="method-start">1141 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Adding personal info", "Upload personal info and create a account")</span>
+                <span class="method-start">1164 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Adding personal info", "Upload personal info and create a account")</span>
+                <span class="method-start">1193 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Profile details Updating", "Upload personal info and create a account")</span>
+                <span class="method-start">1230 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Logout and Validate the Toast message", "Login Functionality")</span>
+                <span class="method-start">1271 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">25839 ms</span>
+                <span class="method-start">1300 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

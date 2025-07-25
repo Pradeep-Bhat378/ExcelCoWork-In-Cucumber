@@ -9,3 +9,16 @@ Feature: Login Functionality
     Then Verify the toast message displayed
    
       
+      
+  Scenario: DailyPass End to end scenario
+   Given User is on login page
+    When User enters valid credentials
+    Then User tap on the login button
+    And Click on Add icon
+    Then Tap on Daily Pass
+    And Book the available Branch
+    And Select the data and click on Book button
+    Then Tap on Proceed Pay 
+    
+    
+    

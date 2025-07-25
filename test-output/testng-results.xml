@@ -1,27 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="14" passed="0" failed="14" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-18T12:49:40 IST" name="Default suite" finished-at="2025-07-18T12:50:07 IST" duration-ms="27226">
+  <suite started-at="2025-07-18T19:59:09 IST" name="Suite" finished-at="2025-07-18T19:59:13 IST" duration-ms="3973">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner2@574b560f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@683dbc2c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-07-18T12:49:40 IST" name="Default test" finished-at="2025-07-18T12:50:07 IST" duration-ms="27226">
-      <class name="testRunner.TestRunner2">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.TestRunner2@574b560f]" started-at="2025-07-18T12:49:40 IST" name="setUpClass" finished-at="2025-07-18T12:49:41 IST" duration-ms="303" status="PASS">
+    <test started-at="2025-07-18T19:59:09 IST" name="Tets1" finished-at="2025-07-18T19:59:13 IST" duration-ms="3973">
+      <class name="testRunner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.TestRunner@683dbc2c]" started-at="2025-07-18T19:59:10 IST" name="setUpClass" finished-at="2025-07-18T19:59:10 IST" duration-ms="281" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@13a268cd]]>
+                <![CDATA[org.testng.TestRunner@6b6def36]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner2@574b560f]" started-at="2025-07-18T12:49:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-18T12:50:06 IST" duration-ms="25506" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@683dbc2c]" started-at="2025-07-18T19:59:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-18T19:59:11 IST" duration-ms="585" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with Valid Credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[The provided search context cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: The provided search context cannot be null
+at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:86)
+at pageObject.LoginPage_EC.<init>(LoginPage_EC.java:20)
+at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/1_LoginScenario.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@683dbc2c]" started-at="2025-07-18T19:59:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-18T19:59:11 IST" duration-ms="63" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with Valid Credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[The provided search context cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: The provided search context cannot be null
+at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:86)
+at pageObject.LoginPage_EC.<init>(LoginPage_EC.java:20)
+at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/1_LoginScenario.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@683dbc2c]" started-at="2025-07-18T19:59:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-18T19:59:11 IST" duration-ms="33" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -34,14 +96,370 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[The provided search context cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: The provided search context cannot be null
+at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:86)
+at pageObject.LoginPage_EC.<init>(LoginPage_EC.java:20)
+at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/1_LoginScenario.feature:16)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.TestRunner2@574b560f]" started-at="2025-07-18T12:50:06 IST" name="tearDownClass" finished-at="2025-07-18T12:50:07 IST" duration-ms="1368" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@683dbc2c]" started-at="2025-07-18T19:59:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-18T19:59:11 IST" duration-ms="26" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with empty Credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[The provided search context cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: The provided search context cannot be null
+at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:86)
+at pageObject.LoginPage_EC.<init>(LoginPage_EC.java:20)
+at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/1_LoginScenario.feature:22)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@683dbc2c]" started-at="2025-07-18T19:59:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-18T19:59:11 IST" duration-ms="25" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with different credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[The provided search context cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: The provided search context cannot be null
+at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:86)
+at pageObject.LoginPage_EC.<init>(LoginPage_EC.java:20)
+at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/1_LoginScenario.feature:27)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@683dbc2c]" started-at="2025-07-18T19:59:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-18T19:59:11 IST" duration-ms="17" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with different credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[The provided search context cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: The provided search context cannot be null
+at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:86)
+at pageObject.LoginPage_EC.<init>(LoginPage_EC.java:20)
+at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/1_LoginScenario.feature:27)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@683dbc2c]" started-at="2025-07-18T19:59:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-18T19:59:11 IST" duration-ms="27" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validating error messages in forgot password page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Forgot Password related features"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[The provided search context cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: The provided search context cannot be null
+at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:86)
+at pageObject.LoginPage_EC.<init>(LoginPage_EC.java:20)
+at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/2_ForgotPassword_Scenario.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@683dbc2c]" started-at="2025-07-18T19:59:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-18T19:59:11 IST" duration-ms="24" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Enter the generated otp in the field and tap on Verify button (on real device it works)"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Forgot Password related features"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[The provided search context cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: The provided search context cannot be null
+at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:86)
+at pageObject.LoginPage_EC.<init>(LoginPage_EC.java:20)
+at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/2_ForgotPassword_Scenario.feature:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@683dbc2c]" started-at="2025-07-18T19:59:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-18T19:59:11 IST" duration-ms="19" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login and Logout from the application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login and Logout feature"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[The provided search context cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: The provided search context cannot be null
+at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:86)
+at pageObject.LoginPage_EC.<init>(LoginPage_EC.java:20)
+at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/3_LoginAndLogout_Scenario.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@683dbc2c]" started-at="2025-07-18T19:59:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-18T19:59:11 IST" duration-ms="20" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logout and Validate the Toast message"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login and Logout feature"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[The provided search context cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: The provided search context cannot be null
+at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:86)
+at pageObject.LoginPage_EC.<init>(LoginPage_EC.java:20)
+at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/3_LoginAndLogout_Scenario.feature:12)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@683dbc2c]" started-at="2025-07-18T19:59:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-18T19:59:11 IST" duration-ms="27" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Adding personal info"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Upload personal info and create a account"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[The provided search context cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: The provided search context cannot be null
+at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:86)
+at pageObject.LoginPage_EC.<init>(LoginPage_EC.java:20)
+at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/4_Personal_info_Scenarios.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@683dbc2c]" started-at="2025-07-18T19:59:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-18T19:59:11 IST" duration-ms="30" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Adding personal info"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Upload personal info and create a account"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[The provided search context cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: The provided search context cannot be null
+at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:86)
+at pageObject.LoginPage_EC.<init>(LoginPage_EC.java:20)
+at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/4_Personal_info_Scenarios.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@683dbc2c]" started-at="2025-07-18T19:59:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-18T19:59:11 IST" duration-ms="39" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Profile details Updating"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Upload personal info and create a account"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[The provided search context cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: The provided search context cannot be null
+at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:86)
+at pageObject.LoginPage_EC.<init>(LoginPage_EC.java:20)
+at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/4_Personal_info_Scenarios.feature:21)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.TestRunner@683dbc2c]" started-at="2025-07-18T19:59:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-18T19:59:11 IST" duration-ms="26" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logout and Validate the Toast message"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[The provided search context cannot be null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: The provided search context cannot be null
+at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:86)
+at pageObject.LoginPage_EC.<init>(LoginPage_EC.java:20)
+at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/trip.feature:4)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.TestRunner@683dbc2c]" started-at="2025-07-18T19:59:11 IST" name="tearDownClass" finished-at="2025-07-18T19:59:13 IST" duration-ms="2451" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- testRunner.TestRunner2 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- testRunner.TestRunner -->
+    </test> <!-- Tets1 -->
+  </suite> <!-- Suite -->
 </testng-results>

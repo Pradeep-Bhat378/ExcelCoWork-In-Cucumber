@@ -13,11 +13,11 @@ import io.cucumber.testng.CucumberOptions;
    dryRun = false, // for running tests
   //  tags = "@Regression",
   // tags = "@Personal",
-    monochrome = true,
-    plugin = {
+    monochrome = true
+  /*  plugin = {
         "pretty",
         "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
-    }
+    } */
 )
 public class TestRunner2 extends AbstractTestNGCucumberTests {
 

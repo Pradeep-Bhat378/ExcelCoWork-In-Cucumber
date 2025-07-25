@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>11/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/14/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jul 18 07:48:30 IST 2025</td>
+<td>Started on:</td><td>Fri Jul 18 20:03:09 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>418 seconds (418776 ms)</td>
+<tr><td>Total time:</td><td>3 seconds (3749 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,281 +76,284 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Logout and Validate the Toast message", "Login Functionality"</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({AppiumBy.androidUIAutomator: new UiSelector().descriptionContains(&quot;Log Out&quot;)})
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:74)
-	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
-	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$aMQ1RSGi.click(Unknown Source)
-	at pageObject.MyprofilePage.Logout(MyprofilePage.java:90)
-	at stepDefinitions.TC_2_Login_and_Logout.click_tap_on_logout_button(TC_2_Login_and_Logout.java:27)
-	at ✽.User tap on logout button(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/trip.feature:8)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@359e27d2 (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
-	... 6 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({AppiumBy.androidUIAutomator: new UiSelector().descriptionContains(&quot;Log Out&quot;)})
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
-Driver info: driver.version: RemoteWebDriver
-	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:54)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 8 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace1640529691", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1640529691'><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({AppiumBy.androidUIAutomator: new UiSelector().descriptionContains(&quot;Log Out&quot;)})
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:74)
-	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
-	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$aMQ1RSGi.click(Unknown Source)
-	at pageObject.MyprofilePage.Logout(MyprofilePage.java:90)
-	at stepDefinitions.TC_2_Login_and_Logout.click_tap_on_logout_button(TC_2_Login_and_Logout.java:27)
-	at ✽.User tap on logout button(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/trip.feature:8)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@359e27d2 (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
-	... 6 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({AppiumBy.androidUIAutomator: new UiSelector().descriptionContains(&quot;Log Out&quot;)})
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
-Driver info: driver.version: RemoteWebDriver
-	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:54)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 8 more
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Adding personal info", "Upload personal info and create a account"</td>
+<td><div><pre>java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/4_Personal_info_Scenarios.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2047812687", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2047812687'><pre>java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/4_Personal_info_Scenarios.feature:5)
 </pre></div></td>
-<td>53</td>
+<td>0</td>
+<td>testRunner.TestRunner@79e2c065</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with different credentials", "Login Functionality"</td>
+<td><div><pre>java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/1_LoginScenario.feature:27)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1261321871", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1261321871'><pre>java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/1_LoginScenario.feature:27)
+</pre></div></td>
+<td>0</td>
 <td>testRunner.TestRunner@79e2c065</td></tr>
 <tr>
 <td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Logout and Validate the Toast message", "Login and Logout feature"</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: AppiumBy.accessibilityId: Logout successful (tried for 5 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at Utils.ToastMessages.VerifyToast(ToastMessages.java:18)
-	at stepDefinitions.TC_2_Login_and_Logout.verify_the_toast_message_displayed(TC_2_Login_and_Logout.java:38)
-	at ✽.Verify the toast message displayed(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/3_LoginAndLogout_Scenario.feature:17)
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [275c1cb5-30cc-42f6-8dd7-b759c66787b1, findElement {using=accessibility id, value=Logout successful}]
-Capabilities {appium:app: C:\Users\prade\Music\Appium..., appium:appActivity: com.excelcoworks.excelcowor..., appium:appPackage: com.excel.coworks, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\prade\Music\Appium..., automationName: UiAutomator2, deviceName: Phone121, fullReset: false, newCommandTimeout: 30, platformName: ANDROID, udid: emulator-5554}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2160, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 30, appium:pixelRatio: 2.75, appium:platformVersion: 16, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2094, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 275c1cb5-30cc-42f6-8dd7-b759c66787b1
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:244)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 3 more
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace280960713", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace280960713'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: AppiumBy.accessibilityId: Logout successful (tried for 5 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at Utils.ToastMessages.VerifyToast(ToastMessages.java:18)
-	at stepDefinitions.TC_2_Login_and_Logout.verify_the_toast_message_displayed(TC_2_Login_and_Logout.java:38)
-	at ✽.Verify the toast message displayed(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/3_LoginAndLogout_Scenario.feature:17)
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Command: [275c1cb5-30cc-42f6-8dd7-b759c66787b1, findElement {using=accessibility id, value=Logout successful}]
-Capabilities {appium:app: C:\Users\prade\Music\Appium..., appium:appActivity: com.excelcoworks.excelcowor..., appium:appPackage: com.excel.coworks, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: C:\Users\prade\Music\Appium..., automationName: UiAutomator2, deviceName: Phone121, fullReset: false, newCommandTimeout: 30, platformName: ANDROID, udid: emulator-5554}, appium:deviceApiLevel: 36, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2160, appium:deviceUDID: emulator-5554, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 30, appium:pixelRatio: 2.75, appium:platformVersion: 16, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:udid: emulator-5554, appium:viewportRect: {height: 2094, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
-Session ID: 275c1cb5-30cc-42f6-8dd7-b759c66787b1
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:244)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 3 more
+<td><div><pre>java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/3_LoginAndLogout_Scenario.feature:12)
+</pre></div><a href='#' onClick='toggleBox("stack-trace925908754", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace925908754'><pre>java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/3_LoginAndLogout_Scenario.feature:12)
 </pre></div></td>
-<td>60</td>
+<td>0</td>
 <td>testRunner.TestRunner@79e2c065</td></tr>
 <tr>
-<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Profile details Updating", "Upload personal info and create a account"</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({AppiumBy.androidUIAutomator: new UiSelector().text(&quot;Pradeep bhat&quot;)})
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:74)
-	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
-	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$aMQ1RSGi.click(Unknown Source)
-	at pageObject.MyprofilePage.ClearOldName(MyprofilePage.java:43)
-	at stepDefinitions.TC_6_ProfileDataUpdate.clear_name_field(TC_6_ProfileDataUpdate.java:27)
-	at ✽.Clear name field(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/4_Personal_info_Scenarios.feature:26)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@110620d (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
-	... 6 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({AppiumBy.androidUIAutomator: new UiSelector().text(&quot;Pradeep bhat&quot;)})
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
-Driver info: driver.version: RemoteWebDriver
-	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:54)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 8 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace171277374", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace171277374'><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.chained({AppiumBy.androidUIAutomator: new UiSelector().text(&quot;Pradeep bhat&quot;)})
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:74)
-	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:78)
-	at org.openqa.selenium.remote.RemoteWebElement$ByteBuddy$aMQ1RSGi.click(Unknown Source)
-	at pageObject.MyprofilePage.ClearOldName(MyprofilePage.java:43)
-	at stepDefinitions.TC_6_ProfileDataUpdate.clear_name_field(TC_6_ProfileDataUpdate.java:27)
-	at ✽.Clear name field(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/4_Personal_info_Scenarios.feature:26)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@110620d (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:265)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
-	... 6 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({AppiumBy.androidUIAutomator: new UiSelector().text(&quot;Pradeep bhat&quot;)})
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
-Driver info: driver.version: RemoteWebDriver
-	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:54)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:139)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	... 8 more
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Logout and Validate the Toast message", "Login Functionality"</td>
+<td><div><pre>java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/trip.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1687586610", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1687586610'><pre>java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/trip.feature:4)
 </pre></div></td>
-<td>49</td>
-<td>testRunner.TestRunner@79e2c065</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating error messages in forgot password page", "Forgot Password related features"</td>
-<td></td>
-<td>13</td>
+<td>0</td>
 <td>testRunner.TestRunner@79e2c065</td></tr>
 <tr>
 <td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with empty Credentials", "Login Functionality"</td>
-<td></td>
-<td>16</td>
-<td>testRunner.TestRunner@79e2c065</td></tr>
-<tr>
-<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login and Logout from the application", "Login and Logout feature"</td>
-<td></td>
-<td>46</td>
-<td>testRunner.TestRunner@79e2c065</td></tr>
-<tr>
-<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with different credentials", "Login Functionality"</td>
-<td></td>
-<td>19</td>
-<td>testRunner.TestRunner@79e2c065</td></tr>
-<tr>
-<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with different credentials", "Login Functionality"</td>
-<td></td>
-<td>17</td>
-<td>testRunner.TestRunner@79e2c065</td></tr>
-<tr>
-<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with Valid Credentials", "Login Functionality"</td>
-<td></td>
-<td>31</td>
-<td>testRunner.TestRunner@79e2c065</td></tr>
-<tr>
-<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Adding personal info", "Upload personal info and create a account"</td>
-<td></td>
-<td>12</td>
-<td>testRunner.TestRunner@79e2c065</td></tr>
-<tr>
-<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Adding personal info", "Upload personal info and create a account"</td>
-<td></td>
-<td>12</td>
+<td><div><pre>java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/1_LoginScenario.feature:22)
+</pre></div><a href='#' onClick='toggleBox("stack-trace576261694", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace576261694'><pre>java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/1_LoginScenario.feature:22)
+</pre></div></td>
+<td>0</td>
 <td>testRunner.TestRunner@79e2c065</td></tr>
 <tr>
 <td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with Valid Credentials", "Login Functionality"</td>
-<td></td>
-<td>22</td>
+<td><div><pre>java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/1_LoginScenario.feature:9)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1881218633", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1881218633'><pre>java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/1_LoginScenario.feature:9)
+</pre></div></td>
+<td>0</td>
 <td>testRunner.TestRunner@79e2c065</td></tr>
 <tr>
-<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with invalid Credentials", "Login Functionality"</td>
-<td></td>
-<td>26</td>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Profile details Updating", "Upload personal info and create a account"</td>
+<td><div><pre>java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/4_Personal_info_Scenarios.feature:21)
+</pre></div><a href='#' onClick='toggleBox("stack-trace54617902", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace54617902'><pre>java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/4_Personal_info_Scenarios.feature:21)
+</pre></div></td>
+<td>0</td>
 <td>testRunner.TestRunner@79e2c065</td></tr>
 <tr>
 <td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Enter the generated otp in the field and tap on Verify button (on real device it works)", "Forgot Password related features"</td>
-<td></td>
-<td>30</td>
+<td><div><pre>java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/2_ForgotPassword_Scenario.feature:11)
+</pre></div><a href='#' onClick='toggleBox("stack-trace187019413", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace187019413'><pre>java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/2_ForgotPassword_Scenario.feature:11)
+</pre></div></td>
+<td>0</td>
+<td>testRunner.TestRunner@79e2c065</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with invalid Credentials", "Login Functionality"</td>
+<td><div><pre>java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/1_LoginScenario.feature:16)
+</pre></div><a href='#' onClick='toggleBox("stack-trace817944369", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace817944369'><pre>java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/1_LoginScenario.feature:16)
+</pre></div></td>
+<td>0</td>
+<td>testRunner.TestRunner@79e2c065</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login and Logout from the application", "Login and Logout feature"</td>
+<td><div><pre>java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/3_LoginAndLogout_Scenario.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace19578363", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace19578363'><pre>java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/3_LoginAndLogout_Scenario.feature:5)
+</pre></div></td>
+<td>0</td>
+<td>testRunner.TestRunner@79e2c065</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with different credentials", "Login Functionality"</td>
+<td><div><pre>java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/1_LoginScenario.feature:27)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2084863094", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2084863094'><pre>java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/1_LoginScenario.feature:27)
+</pre></div></td>
+<td>0</td>
+<td>testRunner.TestRunner@79e2c065</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Adding personal info", "Upload personal info and create a account"</td>
+<td><div><pre>java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/4_Personal_info_Scenarios.feature:5)
+</pre></div><a href='#' onClick='toggleBox("stack-trace666040998", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace666040998'><pre>java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/4_Personal_info_Scenarios.feature:5)
+</pre></div></td>
+<td>0</td>
+<td>testRunner.TestRunner@79e2c065</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validating error messages in forgot password page", "Forgot Password related features"</td>
+<td><div><pre>java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/2_ForgotPassword_Scenario.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2063275841", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2063275841'><pre>java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/2_ForgotPassword_Scenario.feature:4)
+</pre></div></td>
+<td>0</td>
+<td>testRunner.TestRunner@79e2c065</td></tr>
+<tr>
+<td title='testRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with Valid Credentials", "Login Functionality"</td>
+<td><div><pre>java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/1_LoginScenario.feature:4)
+</pre></div><a href='#' onClick='toggleBox("stack-trace34032089", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace34032089'><pre>java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.&lt;init&gt;(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.&lt;init&gt;(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/1_LoginScenario.feature:4)
+</pre></div></td>
+<td>0</td>
 <td>testRunner.TestRunner@79e2c065</td></tr>
 </table><p>
 </body>

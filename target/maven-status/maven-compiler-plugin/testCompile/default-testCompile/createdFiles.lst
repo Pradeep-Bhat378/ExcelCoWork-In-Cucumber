@@ -18,14 +18,17 @@ Utils\Wait$1.class
 pageObject\MyprofilePage.class
 stepDefinitions\TC_8_Personal_information.class
 Utils\Coordinate.class
+Utils\Screenshot.class
 stepDefinitions\TC_5__ForgetScenario2.class
 testRunner\SerialExecution_Igonre.class
+Utils\ExtentReportManager.class
 Utils\Generic.class
 stepDefinitions\TC_6_ProfileDataUpdate.class
 Utils\RetryAnalyzer.class
 Utils\Wait$2.class
 testRunner\TestRunner2.class
 stepDefinitions\Hooks.class
+Utils\Recording.class
 Utils\ExtentReport1.class
 stepDefinitions\TC_2_Login_and_Logout.class
 testRunner\TestRunner.class

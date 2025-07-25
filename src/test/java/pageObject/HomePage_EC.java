@@ -41,5 +41,11 @@ public class HomePage_EC extends BasePage_EC{
     }
     
     
+    @AndroidFindBy(uiAutomator = "new UiSelector().className('android.view.View').instance(16)" )
+    WebElement Addicon;
+    
+    public void TapOnAddIcon() {
+    	Addicon.click();
+    }
 
 }

@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 18, 2025 12:49:40 pm</span></a>
+<a href="#"><span class="badge badge-primary">Jul 18, 2025 08:03:09 pm</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('category-view')">
@@ -71,7 +76,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -79,31 +84,31 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@rr</a>
+<a class="dropdown-item" href="#">@Personal</a><a class="dropdown-item" href="#">@Ignore</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Login Functionality</p>
             <p class="text-sm">
-              <span>12:49:41 pm</span> / <span>00:00:25:363</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>8:03:09 pm</span> / <span>00:00:00:536</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Login Functionality</h5>
-<span class='badge badge-success'>07.18.2025 12:49:41 pm</span>
-<span class='badge badge-danger'>07.18.2025 12:50:06 pm</span>
-<span class='badge badge-default'>00:00:25:363</span>
+<h5 class="test-status text-fail">Login Functionality</h5>
+<span class='badge badge-success'>07.18.2025 8:03:09 pm</span>
+<span class='badge badge-danger'>07.18.2025 8:03:10 pm</span>
+<span class='badge badge-default'>00:00:00:536</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -115,29 +120,930 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Login with invalid Credentials</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Login with Valid Credentials</div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="stepDefinitions.common.CommonSteps.user_is_on_login_page()">
+              <div class="step fail-bg" title="stepDefinitions.common.CommonSteps.user_is_on_login_page()">
                 <span>Given User is on login page</span>
       <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.<init>(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/1_LoginScenario.feature:4)
+</textarea>
+      
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinitions.TC_1_LoginScenario_TC.user_enters_valid_credentials()">
-                <span>When User enters invalid credentials</span>
+              <div class="step fail-bg" title="AFTER_STEP">
+                <span>stepDefinitions.Hooks.Screenshot()</span>
       <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+	at Utils.Screenshot.takesScreenshot(Screenshot.java:17)
+	at stepDefinitions.Hooks.Screenshot(Hooks.java:64)
+</textarea>
+      
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinitions.common.CommonSteps.User_tap_on_the_login_button()">
+              <div class="step skip-bg" title="stepDefinitions.common.CommonSteps.user_enters_valid_credentials()">
+                <span>When User enters valid credentials</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.common.CommonSteps.User_tap_on_the_login_button()">
                 <span>Then User tap on the login button</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinitions.TC_1_LoginScenario_TC.login_should_fail_and_user_should_be_on_login_page()">
-                <span>But Login should fail and user should be on login page</span>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="14"><span class="badge log fail-bg mr-2">Fail</span>Login with Valid Credentials</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.common.CommonSteps.user_is_on_login_page()">
+                <span>Given User is on login page</span>
       <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.<init>(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/1_LoginScenario.feature:9)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER_STEP">
+                <span>stepDefinitions.Hooks.Screenshot()</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+	at Utils.Screenshot.takesScreenshot(Screenshot.java:17)
+	at stepDefinitions.Hooks.Screenshot(Hooks.java:64)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.common.CommonSteps.user_enters_valid_and_credentials(java.lang.String,java.lang.String)">
+                <span>When User enters valid "4pradeep4@gmail.com" and "@Excel12345" credentials</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.common.CommonSteps.User_tap_on_the_login_button()">
+                <span>Then User tap on the login button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.TC_1_LoginScenario_TC.validate_home_page_is_displayed()">
+                <span>And Validate HomePage is displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="29"><span class="badge log fail-bg mr-2">Fail</span>Login with invalid Credentials</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.common.CommonSteps.user_is_on_login_page()">
+                <span>Given User is on login page</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.<init>(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/1_LoginScenario.feature:16)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER_STEP">
+                <span>stepDefinitions.Hooks.Screenshot()</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+	at Utils.Screenshot.takesScreenshot(Screenshot.java:17)
+	at stepDefinitions.Hooks.Screenshot(Hooks.java:64)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.TC_1_LoginScenario_TC.user_enters_valid_credentials()">
+                <span>When User enters invalid credentials</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.common.CommonSteps.User_tap_on_the_login_button()">
+                <span>Then User tap on the login button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.TC_1_LoginScenario_TC.login_should_fail_and_user_should_be_on_login_page()">
+                <span>But Login should fail and user should be on login page</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="44"><span class="badge log fail-bg mr-2">Fail</span>Login with empty Credentials</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.common.CommonSteps.user_is_on_login_page()">
+                <span>Given User is on login page</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.<init>(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/1_LoginScenario.feature:22)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER_STEP">
+                <span>stepDefinitions.Hooks.Screenshot()</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+	at Utils.Screenshot.takesScreenshot(Screenshot.java:17)
+	at stepDefinitions.Hooks.Screenshot(Hooks.java:64)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.common.CommonSteps.User_tap_on_the_login_button()">
+                <span>And User tap on the login button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.TC_1_LoginScenario_TC.validate_error_message_displayed_below_email_text_field()">
+                <span>Then Validate error message displayed below email text field</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="56"><span class="badge log fail-bg mr-2">Fail</span>Login with different credentials</div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="57"><span class="badge log fail-bg mr-2">Fail</span>Login with different credentials</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given User is on login page</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.<init>(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/1_LoginScenario.feature:27)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>stepDefinitions.Hooks.Screenshot()</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+	at Utils.Screenshot.takesScreenshot(Screenshot.java:17)
+	at stepDefinitions.Hooks.Screenshot(Hooks.java:64)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When User enters invalid emailId "4pradeep4@gmail.com"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And User enters invalid password "@Excel12345"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Login should be "success"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="72"><span class="badge log fail-bg mr-2">Fail</span>Login with different credentials</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given User is on login page</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.<init>(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/1_LoginScenario.feature:27)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>stepDefinitions.Hooks.Screenshot()</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+	at Utils.Screenshot.takesScreenshot(Screenshot.java:17)
+	at stepDefinitions.Hooks.Screenshot(Hooks.java:64)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When User enters invalid emailId "John"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And User enters invalid password "wrongpwd"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Login should be "failed"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="87"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Forgot Password related features</p>
+            <p class="text-sm">
+              <span>8:03:10 pm</span> / <span>00:00:00:046</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Forgot Password related features</h5>
+<span class='badge badge-success'>07.18.2025 8:03:10 pm</span>
+<span class='badge badge-danger'>07.18.2025 8:03:10 pm</span>
+<span class='badge badge-default'>00:00:00:046</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=87</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="88"><span class="badge log fail-bg mr-2">Fail</span>Validating error messages in forgot password page</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.common.CommonSteps.user_is_on_login_page()">
+                <span>Given User is on login page</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.<init>(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/2_ForgotPassword_Scenario.feature:4)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER_STEP">
+                <span>stepDefinitions.Hooks.Screenshot()</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+	at Utils.Screenshot.takesScreenshot(Screenshot.java:17)
+	at stepDefinitions.Hooks.Screenshot(Hooks.java:64)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.TC_4__ForgotPassword1.user_tap_on_forgot_password_link()">
+                <span>And User tap on forgot password link</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.TC_4__ForgotPassword1.tap_on_verify_button_without_entering_data()">
+                <span>Then Tap on Verify button without entering data</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.TC_4__ForgotPassword1.validate_error_message()">
+                <span>And Validate error message</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="103"><span class="badge log fail-bg mr-2">Fail</span>Enter the generated otp in the field and tap on Verify button (on real device it works)</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.common.CommonSteps.user_is_on_login_page()">
+                <span>Given User is on login page</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.<init>(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/2_ForgotPassword_Scenario.feature:11)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER_STEP">
+                <span>stepDefinitions.Hooks.Screenshot()</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+	at Utils.Screenshot.takesScreenshot(Screenshot.java:17)
+	at stepDefinitions.Hooks.Screenshot(Hooks.java:64)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.TC_4__ForgotPassword1.user_tap_on_forgot_password_link()">
+                <span>And User tap on forgot password link</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.TC_5__ForgetScenario2.User_enter_previous_emailId()">
+                <span>And User enter previous emailId</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.TC_5__ForgetScenario2.tap_on_verify_button()">
+                <span>Then Tap on Verify button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.TC_5__ForgetScenario2.tap_on_done_button_in_OTP_CODE_page()">
+                <span>And Tap on Done button in OTP CODE page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.TC_4__ForgotPassword1.verify_the_notification()">
+                <span>Then verify the notification</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.TC_4__ForgotPassword1.put_the_generated_otp_in_the_textfield()">
+                <span>And Put the Generated OTP in the textfield.</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="127"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Login and Logout feature</p>
+            <p class="text-sm">
+              <span>8:03:10 pm</span> / <span>00:00:00:037</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Login and Logout feature</h5>
+<span class='badge badge-success'>07.18.2025 8:03:10 pm</span>
+<span class='badge badge-danger'>07.18.2025 8:03:10 pm</span>
+<span class='badge badge-default'>00:00:00:037</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=127</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="128"><span class="badge log fail-bg mr-2">Fail</span>Login and Logout from the application</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.common.CommonSteps.user_is_on_login_page()">
+                <span>Given User is on login page</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.<init>(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/3_LoginAndLogout_Scenario.feature:5)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER_STEP">
+                <span>stepDefinitions.Hooks.Screenshot()</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+	at Utils.Screenshot.takesScreenshot(Screenshot.java:17)
+	at stepDefinitions.Hooks.Screenshot(Hooks.java:64)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.common.CommonSteps.user_enters_valid_credentials()">
+                <span>When User enters valid credentials</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.common.CommonSteps.User_tap_on_the_login_button()">
+                <span>Then User tap on the login button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.TC_1_LoginScenario_TC.User_tap_on_profile_icon_and_scroll_till_end()">
+                <span>And User tap on profile icon and scroll till end</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.TC_2_Login_and_Logout.click_tap_on_logout_button()">
+                <span>And User tap on logout button</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="146"><span class="badge log fail-bg mr-2">Fail</span>Logout and Validate the Toast message</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.common.CommonSteps.user_is_on_login_page()">
+                <span>Given User is on login page</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.<init>(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/3_LoginAndLogout_Scenario.feature:12)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER_STEP">
+                <span>stepDefinitions.Hooks.Screenshot()</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+	at Utils.Screenshot.takesScreenshot(Screenshot.java:17)
+	at stepDefinitions.Hooks.Screenshot(Hooks.java:64)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.common.CommonSteps.user_enters_valid_credentials()">
+                <span>When User enters valid credentials</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.common.CommonSteps.User_tap_on_the_login_button()">
+                <span>Then User tap on the login button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.TC_1_LoginScenario_TC.User_tap_on_profile_icon_and_scroll_till_end()">
+                <span>And User tap on profile icon and scroll till end</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.TC_2_Login_and_Logout.click_tap_on_logout_button()">
+                <span>And User tap on logout button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.TC_2_Login_and_Logout.verify_the_toast_message_displayed()">
+                <span>Then Verify the toast message displayed</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="167"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Upload personal info and create a account</p>
+            <p class="text-sm">
+              <span>8:03:10 pm</span> / <span>00:00:00:093</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Upload personal info and create a account</h5>
+<span class='badge badge-success'>07.18.2025 8:03:10 pm</span>
+<span class='badge badge-danger'>07.18.2025 8:03:10 pm</span>
+<span class='badge badge-default'>00:00:00:093</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=167</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="168"><span class="badge log fail-bg mr-2">Fail</span>Adding personal info</div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="169"><span class="badge log fail-bg mr-2">Fail</span>Adding personal info</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given User is on login page</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.<init>(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/4_Personal_info_Scenarios.feature:5)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>stepDefinitions.Hooks.Screenshot()</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+	at Utils.Screenshot.takesScreenshot(Screenshot.java:17)
+	at stepDefinitions.Hooks.Screenshot(Hooks.java:64)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When User tap on CreateAccount Link</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Enter full name "Pradeep"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Enter Company name "Concentrix"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Enter email address "ab@gmail.com"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Mobile number "1111111111"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Tap on Next button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="193"><span class="badge log fail-bg mr-2">Fail</span>Adding personal info</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given User is on login page</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.<init>(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/4_Personal_info_Scenarios.feature:5)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>stepDefinitions.Hooks.Screenshot()</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+	at Utils.Screenshot.takesScreenshot(Screenshot.java:17)
+	at stepDefinitions.Hooks.Screenshot(Hooks.java:64)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When User tap on CreateAccount Link</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Enter full name "Prashanth"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Enter Company name "Testsigma"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Enter email address "bc@gmail.com"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Mobile number "2222222222"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Tap on Next button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="217"><span class="badge log fail-bg mr-2">Fail</span>Profile details Updating</div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="218"><span class="badge log fail-bg mr-2">Fail</span>Profile details Updating</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given User is on login page</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.<init>(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/4_Personal_info_Scenarios.feature:21)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>stepDefinitions.Hooks.Screenshot()</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+	at Utils.Screenshot.takesScreenshot(Screenshot.java:17)
+	at stepDefinitions.Hooks.Screenshot(Hooks.java:64)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When User enters valid credentials</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then User tap on the login button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then User tap on profile</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then User tap on edit icon</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Clear name field</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Clear company name field</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Click on save button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And User EnterName "Prashanth"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And User EnterCompanyname "Mankind"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And Click on save button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="254"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Functionality</p>
+            <p class="text-sm">
+              <span>8:03:10 pm</span> / <span>00:00:00:026</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Login Functionality</h5>
+<span class='badge badge-success'>07.18.2025 8:03:10 pm</span>
+<span class='badge badge-danger'>07.18.2025 8:03:10 pm</span>
+<span class='badge badge-default'>00:00:00:026</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=254</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="255"><span class="badge log fail-bg mr-2">Fail</span>Logout and Validate the Toast message</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="stepDefinitions.common.CommonSteps.user_is_on_login_page()">
+                <span>Given User is on login page</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: The provided search context cannot be null
+	at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:920)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.requireWebDriverReference(AppiumFieldDecorator.java:129)
+	at io.appium.java_client.pagefactory.AppiumFieldDecorator.<init>(AppiumFieldDecorator.java:86)
+	at pageObject.LoginPage_EC.<init>(LoginPage_EC.java:20)
+	at stepDefinitions.common.CommonSteps.user_is_on_login_page(CommonSteps.java:16)
+	at ✽.User is on login page(file:///C:/Users/prade/Music/Appium%20Frameworks/ExcelCowork/src/test/resources/features/trip.feature:4)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER_STEP">
+                <span>stepDefinitions.Hooks.Screenshot()</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "driver" is null
+	at Utils.Screenshot.takesScreenshot(Screenshot.java:17)
+	at stepDefinitions.Hooks.Screenshot(Hooks.java:64)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.common.CommonSteps.user_enters_valid_credentials()">
+                <span>When User enters valid credentials</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.common.CommonSteps.User_tap_on_the_login_button()">
+                <span>Then User tap on the login button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.TC_1_LoginScenario_TC.User_tap_on_profile_icon_and_scroll_till_end()">
+                <span>And User tap on profile icon and scroll till end</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.TC_2_Login_and_Logout.click_tap_on_logout_button()">
+                <span>And User tap on logout button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepDefinitions.TC_2_Login_and_Logout.verify_the_toast_message_displayed()">
+                <span>Then Verify the toast message displayed</span>
+      <div>Step skipped
       </div>
               </div>
           </div>
@@ -155,10 +1061,10 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view category-view attributes-view">
+<div class="test-wrapper row view exception-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
 <ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
@@ -166,15 +1072,15 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>28</span>
 </span>
-<p class="name">@rr</p>
-<p class="duration text-sm">1 tests</p>
+<p class="name">java.lang.NullPointerException</p>
+<p class="duration text-sm">28 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@rr</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<h4>java.lang.NullPointerException</h4>
+<span status="fail" class='badge log badge-danger'>28 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -185,13 +1091,391 @@
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>12:49:41 pm</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Login with invalid Credentials</a>
+<a href="#" class="linked" test-id='1' id='5'>Given User is on login page</a>
 <div class="">
-<span class="badge badge-default">Login Functionality.Login with invalid Credentials</span>
+<span class="badge badge-default">Login Functionality.Login with Valid Credentials.Given User is on login page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='6'>stepDefinitions.Hooks.Screenshot()</a>
+<div class="">
+<span class="badge badge-default">Login Functionality.Login with Valid Credentials.stepDefinitions.Hooks.Screenshot()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='17'>Given User is on login page</a>
+<div class="">
+<span class="badge badge-default">Login Functionality.Login with Valid Credentials.Given User is on login page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='18'>stepDefinitions.Hooks.Screenshot()</a>
+<div class="">
+<span class="badge badge-default">Login Functionality.Login with Valid Credentials.stepDefinitions.Hooks.Screenshot()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='32'>Given User is on login page</a>
+<div class="">
+<span class="badge badge-default">Login Functionality.Login with invalid Credentials.Given User is on login page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='33'>stepDefinitions.Hooks.Screenshot()</a>
+<div class="">
+<span class="badge badge-default">Login Functionality.Login with invalid Credentials.stepDefinitions.Hooks.Screenshot()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='47'>Given User is on login page</a>
+<div class="">
+<span class="badge badge-default">Login Functionality.Login with empty Credentials.Given User is on login page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='48'>stepDefinitions.Hooks.Screenshot()</a>
+<div class="">
+<span class="badge badge-default">Login Functionality.Login with empty Credentials.stepDefinitions.Hooks.Screenshot()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='60'>Given User is on login page</a>
+<div class="">
+<span class="badge badge-default">Login Functionality.Login with different credentials.Given User is on login page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='61'>stepDefinitions.Hooks.Screenshot()</a>
+<div class="">
+<span class="badge badge-default">Login Functionality.Login with different credentials.stepDefinitions.Hooks.Screenshot()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='75'>Given User is on login page</a>
+<div class="">
+<span class="badge badge-default">Login Functionality.Login with different credentials.Given User is on login page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='76'>stepDefinitions.Hooks.Screenshot()</a>
+<div class="">
+<span class="badge badge-default">Login Functionality.Login with different credentials.stepDefinitions.Hooks.Screenshot()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='87' id='91'>Given User is on login page</a>
+<div class="">
+<span class="badge badge-default">Forgot Password related features.Validating error messages in forgot password page.Given User is on login page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='87' id='92'>stepDefinitions.Hooks.Screenshot()</a>
+<div class="">
+<span class="badge badge-default">Forgot Password related features.Validating error messages in forgot password page.stepDefinitions.Hooks.Screenshot()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='87' id='106'>Given User is on login page</a>
+<div class="">
+<span class="badge badge-default">Forgot Password related features.Enter the generated otp in the field and tap on Verify button (on real device it works).Given User is on login page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='87' id='107'>stepDefinitions.Hooks.Screenshot()</a>
+<div class="">
+<span class="badge badge-default">Forgot Password related features.Enter the generated otp in the field and tap on Verify button (on real device it works).stepDefinitions.Hooks.Screenshot()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='127' id='131'>Given User is on login page</a>
+<div class="">
+<span class="badge badge-default">Login and Logout feature.Login and Logout from the application.Given User is on login page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='127' id='132'>stepDefinitions.Hooks.Screenshot()</a>
+<div class="">
+<span class="badge badge-default">Login and Logout feature.Login and Logout from the application.stepDefinitions.Hooks.Screenshot()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='127' id='149'>Given User is on login page</a>
+<div class="">
+<span class="badge badge-default">Login and Logout feature.Logout and Validate the Toast message.Given User is on login page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='127' id='150'>stepDefinitions.Hooks.Screenshot()</a>
+<div class="">
+<span class="badge badge-default">Login and Logout feature.Logout and Validate the Toast message.stepDefinitions.Hooks.Screenshot()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='167' id='172'>Given User is on login page</a>
+<div class="">
+<span class="badge badge-default">Upload personal info and create a account.Adding personal info.Given User is on login page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='167' id='173'>stepDefinitions.Hooks.Screenshot()</a>
+<div class="">
+<span class="badge badge-default">Upload personal info and create a account.Adding personal info.stepDefinitions.Hooks.Screenshot()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='167' id='196'>Given User is on login page</a>
+<div class="">
+<span class="badge badge-default">Upload personal info and create a account.Adding personal info.Given User is on login page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='167' id='197'>stepDefinitions.Hooks.Screenshot()</a>
+<div class="">
+<span class="badge badge-default">Upload personal info and create a account.Adding personal info.stepDefinitions.Hooks.Screenshot()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='167' id='221'>Given User is on login page</a>
+<div class="">
+<span class="badge badge-default">Upload personal info and create a account.Profile details Updating.Given User is on login page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='167' id='222'>stepDefinitions.Hooks.Screenshot()</a>
+<div class="">
+<span class="badge badge-default">Upload personal info and create a account.Profile details Updating.stepDefinitions.Hooks.Screenshot()</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='254' id='258'>Given User is on login page</a>
+<div class="">
+<span class="badge badge-default">Login Functionality.Logout and Validate the Toast message.Given User is on login page</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='254' id='259'>stepDefinitions.Hooks.Screenshot()</a>
+<div class="">
+<span class="badge badge-default">Login Functionality.Logout and Validate the Toast message.stepDefinitions.Hooks.Screenshot()</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@Personal</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Personal</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='167' id='169'>Adding personal info</a>
+<div class="">
+<span class="badge badge-default">Upload personal info and create a account.Adding personal info</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='167' id='193'>Adding personal info</a>
+<div class="">
+<span class="badge badge-default">Upload personal info and create a account.Adding personal info</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@Ignore</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Ignore</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='87' id='103'>Enter the generated otp in the field and tap on Verify button (on real device it works)</a>
+<div class="">
+<span class="badge badge-default">Forgot Password related features.Enter the generated otp in the field and tap on Verify button (on real device it works)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>20:03:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='167' id='218'>Profile details Updating</a>
+<div class="">
+<span class="badge badge-default">Upload personal info and create a account.Profile details Updating</span>
 </div>
 </td>
 </tr>
@@ -212,25 +1496,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 18, 2025 12:49:40 pm</h3>
+<h3>Jul 18, 2025 08:03:09 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 18, 2025 12:50:06 pm</h3>
+<h3>Jul 18, 2025 08:03:10 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>0</h3>
+<h3>5</h3>
 </div></div>
 </div>
 </div>
@@ -246,12 +1530,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>1</b> features passed
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> features failed,
+<small data-tooltip='100%'><b>5</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -269,9 +1553,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> scenarios failed,
+<small data-tooltip='100%'><b>14</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -289,10 +1573,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>4</b> steps passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> steps passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='31%'><b>28</b> steps failed,
+<b>61</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -308,7 +1592,7 @@
 </div></div>
 <script>
 var timeline = {
-"Login Functionality":25.363
+"Login Functionality":0.536,"Forgot Password related features":0.046,"Login and Logout feature":0.037,"Upload personal info and create a account":0.093,"Login Functionality":0.026
 };
 </script>
 <div class="row">
@@ -318,12 +1602,20 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@rr</td>
-<td>1</td>
+<td>@Personal</td>
+<td>0</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@Ignore</td>
 <td>0</td>
-<td>100%</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
 </tr>
 </tbody>
 </table></div>
@@ -334,21 +1626,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
-failParent: 0,
+passParent: 0,
+failParent: 5,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 1,
-failChild: 0,
+passChild: 0,
+failChild: 14,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 4,
-failGrandChild: 0,
+passGrandChild: 0,
+failGrandChild: 28,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 61,
 infoGrandChild: 0,
 eventsCount: 5,
 };
